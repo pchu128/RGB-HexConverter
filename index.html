@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- hexConverterPanel -->
+    <div id="hexConverter">
+        <!-- Red -->
+        <div id="redBox">
+            <label id="redLabel">R</label>
+            <input 
+                type="range" 
+                id="red" 
+                value="0"
+                min="0" 
+                max="255" 
+                oninput="redOutput.value = red.value, colorCode.red(this.value)">
+            <output id="redOutput">0</output>
+        </div>
+        <!-- Green -->
+        <div id="greenBox">
+            <label id="greenLabel">G</label>
+            <input 
+                type="range" 
+                id="green"
+                value="0" 
+                min="0" 
+                max="255" 
+                oninput="greenOutput.value = green.value, colorCode.green(this.value)">
+            <output id="greenOutput">0</output>
+        </div>
+        <!-- Blue -->
+        <div id="blueBox">
+            <label id="blueLabel">B</label>
+            <input 
+                type="range" 
+                id="blue" 
+                value="0"
+                min="0" 
+                max="255" 
+                oninput="blueOutput.value = blue.value, colorCode.blue(this.value)">
+            <output id="blueOutput">0</output>
+        </div>
+    </div>
+    <div id="colorDisplay">#000000</div>
+    <script src="javascript.js"></script>
+</body>
+</html>
