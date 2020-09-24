@@ -3,4 +3,4 @@
 
 ## 如何開啟
 下載後開啟 index.html 檔案即可使用，或者可以直接點擊以下網址預覽：
-https://htmlpreview.github.io/?https://github.com/pchu128/RGB-HexConverter/blob/master/index.html
+https://pchu128.github.io/RGB-HexConverter/
